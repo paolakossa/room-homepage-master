@@ -1,7 +1,6 @@
 const   menuIcon  = document.querySelector('.nav__hamburger');
 const   closeIcon  = document.querySelector(".nav__close");
-const   nextBtnMob = document.querySelector(".slider-mob__next-btn");
-const   prevBtnMob = document.querySelector(".slider-mob__prev-btn");   
+
 
 /******
  *  Start Events *
