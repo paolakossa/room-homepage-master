@@ -1,8 +1,11 @@
+header{
+
+    position:absolute;
+}
 .header{
     padding: 1.8rem 0;
     position: relative;
-    background-color: #5B5B5B;
-background: linear-gradient(90deg, rgba(101,100,110,1) 0%, rgba(177,177,167,1) 14%, rgba(101,100,110,1) 100%);
+   
 }
 /* .nav{
 } */
@@ -22,6 +25,7 @@ background: linear-gradient(90deg, rgba(101,100,110,1) 0%, rgba(177,177,167,1) 1
     height: 3px;
     background-color: var(--white);
     margin-left: 2rem;
+    z-index: 99999;
 }
 .nav__hamburger span:nth-child(2){
     top: 6px;
@@ -87,6 +91,8 @@ background: linear-gradient(90deg, rgba(101,100,110,1) 0%, rgba(177,177,167,1) 1
     width: 13.8rem;
     margin-top: 1rem;
     margin-left: 12rem;
+    z-index: 99999;
+
 }
 .logo a{
     text-decoration: none;
@@ -95,6 +101,7 @@ background: linear-gradient(90deg, rgba(101,100,110,1) 0%, rgba(177,177,167,1) 1
 .logo img{
     width: 50%;
     object-fit: cover;
+
 }
  
 

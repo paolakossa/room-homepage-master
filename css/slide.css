@@ -2,10 +2,11 @@
     Styling Slider
 */
 /* .product-view{} */
-.slider-mob{
+.slider-mob {
     position: relative;
+    background-image: url();
 }
-.slider-mob__bar{
+.slider-mob__bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow-x: hidden;

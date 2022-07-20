@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/cabecalho.css">
   <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/texto.css">
+
 
   
   <title>Frontend Mentor | Room homepage</title>
@@ -20,61 +22,97 @@
 </head>
 <body>
 
-  <div class="row">
-        <header class="header flex">
-            <nav class="nav">
-                <div class="nav__hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <header class="row">
+          <div class="header flex">
+              <nav class="nav">
+                  <div class="nav__hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+                  <div class="nav__menu">
+                      <div class="nav__close"><img src="images/icon-close.svg" alt="Close"></div>
+                      <ul class="nav__list">
+                          <li><a href="#">home</a></li>
+                          <li><a href="#">shop</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">contact</a></li>
+                      </ul>
+                  </div>
+              </nav>
+            
+                <div class="logo">
+                    <a href="./index.html"><img src="images/logo.svg" alt="Room Logo"></a>
                 </div>
-                <div class="nav__menu">
-                    <div class="nav__close"><img src="images/icon-close.svg" alt="Close"></div>
-                    <ul class="nav__list">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">shop</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-          
-              <div class="logo">
-                  <a href="./index.html"><img src="images/logo.svg" alt="Room Logo"></a>
-              </div>
-
-              
-         
+            </div>
         </header>
 
          <main>
-            <div class="slider-mob">
-                  <div class="slider-mob__bar">
+                  <section class="slider-mob">
+                        <div class="slider-mob__bar">
 
-                      <div class="slider-mob__item">
-                          <img src="images/mobile-image-hero-1.jpg" alt="Product 1">
-                      </div>
-                      <div class="slider-mob__item">
-                          <img src="images/mobile-image-hero-2.jpg" alt="Product 1">
-                      </div>
-                      <div class="slider-mob__item">
-                          <img src="images/mobile-image-hero-3.jpg" alt="Product 1">
-                      </div>
+                            <div class="slider-mob__item">
+                                <img src="images/mobile-image-hero-1.jpg" alt="Product 1">
+                            </div>
+                            <div class="slider-mob__item">
+                                <img src="images/mobile-image-hero-2.jpg" alt="Product 1">
+                            </div>
+                            <div class="slider-mob__item">
+                                <img src="images/mobile-image-hero-3.jpg" alt="Product 1">
+                            </div>
 
-                  <div class="slider-mob__control">
+                        <div class="slider-mob__control">
 
-                      <div class="slider-mob__prev-btn">
-                          <img src="images/icon-angle-left.svg" alt="previous product" />
-                      </div>
+                            <div class="slider-mob__prev-btn">
+                                <img src="images/icon-angle-left.svg" alt="previous product" />
+                            </div>
 
-                      <div class="slider-mob__next-btn">
-                          <img src="images/icon-angle-right.svg" alt="next product" />
+                            <div class="slider-mob__next-btn">
+                                <img src="images/icon-angle-right.svg" alt="next product" />
+                            </div>
+                            
+                        </div>
+                   
                       </div>
-                      
-                  </div>
+                   </section>
               <!-- End Mobile Slider -->
-          </div>
-      </main>
+
+            <section class="text">
+
+              <h1 class="text_til">Discover innovative ways to decorate</h1>
+              
+              <p class="text_par">We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+
+              <h3 class="text_sub">Shop now → </h3>
+
+            </section>  
+
+            <figure>
+              
+              <img src="images/image-about-dark.jpg" class="dark">
+            
+            </figure>
+
+            <section>
+
+              <h1 class="text_til1">About our furniture</h1>
+
+              <p class="text_par">Our multifunctional collection blends design and function to suit your individual taste.
+                Make each room unique, or pick a cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                or anything in between. Product specialists are available to help you create your dream space.</p>
+            
+            </section>
+
+            <figure>
+              
+              <img src="images/image-about-light.jpg" class="light">
+
+            </figure>
+       </main>
   <script src="js/app.js"></script>
 </body>
 </html>
