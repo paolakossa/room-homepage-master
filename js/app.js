@@ -18,11 +18,12 @@ closeIcon.addEventListener("click", () => {
 });
 
 /** Mobile Slider Events  **/
-// Slide to Next Item in Slider
-nextBtnMob.addEventListener("click", ()=>slide("next"));
-// Slide to Previous Item in Slider
-prevBtnMob.addEventListener("click", ()=>slide("previous"));
-
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Slide to Next Item in Slider
+    nextBtnMob.addEventListener("click", ()=>slide("next"));
+    // Slide to Previous Item in Slider
+    prevBtnMob.addEventListener("click", ()=>slide("previous"));
+  }); 
 /*****
 **  Main Functions  **
 *****/
