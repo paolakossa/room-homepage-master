@@ -19,6 +19,9 @@ closeIcon.addEventListener("click", () => {
 
 /** Mobile Slider Events  **/
 window.addEventListener('DOMContentLoaded', (event) => {
+    const   nextBtnMob = document.querySelector(".slider-mob__next-btn");
+    const   prevBtnMob = document.querySelector(".slider-mob__prev-btn");   
+
     // Slide to Next Item in Slider
     nextBtnMob.addEventListener("click", ()=>slide("next"));
     // Slide to Previous Item in Slider
