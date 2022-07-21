@@ -84,7 +84,7 @@
 
 }
 
-@media only screen and  (min-width:768px){
+@media only screen and  (min-width:1024px){
 
 
 	.slider-text{
@@ -151,8 +151,11 @@
 
 .dark{
 
-	width: 200%;
-	margin-top: -1rem;
+	width: 400px;
+	margin-top: -3rem;
+	height: 267px;
+
+
 
 }
 
@@ -160,11 +163,10 @@
 
 	margin-top: 3rem;
 	margin-bottom: 1rem;
-	margin-left: 20rem;
-	margin-right: 2rem;
+	margin-left: 6.5rem;
 	font-weight: 700;
 	font-size: 12px;
-	text-align: left;
+	text-align: ;
 	text-transform: uppercase;
 	letter-spacing: 0.5rem;
 	
@@ -173,22 +175,23 @@
 
 .text_par1{
 
-	text-align: center;
-	margin-left: 20rem;
-	margin-right: 
+	text-align: justify;
 	color: var(--drak-gray);
 	font-size: 14px;
 	line-height: 2rem;
 	font-weight: 500;
-	flex-wrap: wrap;
+	width: 90%;
+	margin-left: 6rem;
+
+
+
 }
 
 .light{
 
-	margin-top:-0.5rem
-	width: 200%;
-	margin-right: 30rem ;
-
+	width: 400px;
+	margin-left: 6rem;
+	margin-top: -0.5rem;
 }
 }
 
