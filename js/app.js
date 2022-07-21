@@ -1,5 +1,10 @@
 const   menuIcon  = document.querySelector('.nav__hamburger');
 const   closeIcon  = document.querySelector(".nav__close");
+const   nextBtnMob = document.querySelector(".slider-mob__next-btn");
+const   prevBtnMob = document.querySelector(".slider-mob__prev-btn"); 
+const   nextBtnDes = document.querySelector(".slider-desk__next-btn");
+const   prevBtnDes = document.querySelector(".slider-desk__prev-btn");  
+
 
 
 /******
@@ -17,15 +22,18 @@ closeIcon.addEventListener("click", () => {
 });
 
 /** Mobile Slider Events  **/
-window.addEventListener('DOMContentLoaded', (event) => {
-    const   nextBtnMob = document.querySelector(".slider-mob__next-btn");
-    const   prevBtnMob = document.querySelector(".slider-mob__prev-btn");   
+// Slide to Next Item in Slider
+nextBtnMob.addEventListener("click", ()=>slide("next"));
+// Slide to Previous Item in Slider
+prevBtnMob.addEventListener("click", ()=>slide("previous"));
 
-    // Slide to Next Item in Slider
-    nextBtnMob.addEventListener("click", ()=>slide("next"));
-    // Slide to Previous Item in Slider
-    prevBtnMob.addEventListener("click", ()=>slide("previous"));
-  }); 
+/** Desktop Slider Events  **/
+// Slide to Next Item in Slider
+nextBtnDes.addEventListener("click", ()=>slides("next"));
+// Slide to Previous Item in Slider
+prevBtnDes.addEventListener("click", ()=>slides("previous"));
+    
+
 /*****
 **  Main Functions  **
 *****/
@@ -73,5 +81,20 @@ function incQty(){
 function decQty(){
     if(inpQty.value > 0){
         inpQty.value--;
+    }
+}
+
+function slides(slideTos){
+    const sliderBars  = document.querySelector(".slider-desk__bar");
+    const slideWidths  = document.querySelector('.slider-desk__item').offsetWidth;
+    const sliderItemsNums = Array.from(document.querySelectorAll(".slider-desk__item"))
+    if(slideTos === "next"){
+        if(sliderBars.scrollLeft < (sliderItemsNums.length - 1) * slideWidths){
+            sliderBars.scrollLeft += slideWidths;
+        }
+    }else if(slideTos === "previous"){
+        if(sliderBars.scrollLeft > 0){
+            sliderBars.scrollLeft -= slideWidths;
+        }
     }
 }

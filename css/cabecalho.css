@@ -105,92 +105,78 @@ header{
 }
  
 
-@media screen and  (min-width:768px) {
+@media only screen and  (min-width:768px) {
 
-   header{
-    
-    
-    background-image: url(../images/desktop/image-header.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 800px;
+ header{
 
-    
+    position:absolute;
 }
     
-#header {
     
-    color: var(--white);
-    width: 100%;
-    display: inline-block;
-    
-
-   
-    
-}
-
-.cabecalho__logo {
-    margin: 1.5rem;
-    width: 15vw;
-
-}
-
-#nav {
-    text-align: center;
-}
-
-#menu{
-
-    display: block;
-    width: 100%;
-    top:70px;
-    text-align: right;
-   margin-left: 2rem;
-    visibility: visible;
-    overflow-y: visible;
-    
-
-}
-
-#btn-mobile{
-    
-    display: none;
-
-}
-
-li {
-    display: inline-block;
-    font-size: 18px;
-    margin-top: -4rem;
-    width: 6rem;
-    height: 6rem;
+.header{
+    padding: 1.8rem 0;
     position: relative;
-
-   
-    
-
    
 }
+/* .nav{
+} */
+.nav__hamburger{
+    display: none;
+}
 
-.contact{
+.nav__close{
 
-    width: 10vw;
-    background:var(--white);
-    font-weight:bold;
-    font-size: 18px;
-    color: var(--very-dark-desaturated-blue);
-    text-transform: uppercase;
-    margin-right: 4rem;
-   
+    visibility: hidden;
+}
 
-
-    
-   
- }
-
-.texto{
-
+.nav__menu{
+        
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding-top: 0;
+        padding-left: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transition: all 0.2s ease-in-out;
+}
+.nav__list{
+    list-style: none;
     display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    margin-left: 12rem;
 
 }
 
+.nav__list li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.nav__list li a:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo{
+    width: 13.8rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    z-index: 99999;
+
+}
+.logo a{
+    text-decoration: none;
+    width: 100%;
+}
+.logo img{
+    width: 50%;
+    object-fit: cover;
+
+}
