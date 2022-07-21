@@ -1,9 +1,9 @@
 const   menuIcon  = document.querySelector('.nav__hamburger');
 const   closeIcon  = document.querySelector(".nav__close");
-const   nextBtnMob = document.querySelector(".slider-mob__next-btn");
-const   prevBtnMob = document.querySelector(".slider-mob__prev-btn"); 
-const   nextBtnDes = document.querySelector(".slider-desk__next-btn");
-const   prevBtnDes = document.querySelector(".slider-desk__prev-btn");  
+let     nextBtnMob = document.querySelector(".slider-mob__next-btn");
+let     prevBtnMob = document.querySelector(".slider-mob__prev-btn"); 
+let     nextBtnDes = document.querySelector(".slider-desk__next-btn");
+let     prevBtnDes = document.querySelector(".slider-desk__prev-btn");  
 
 
 
@@ -23,15 +23,15 @@ closeIcon.addEventListener("click", () => {
 
 /** Mobile Slider Events  **/
 // Slide to Next Item in Slider
-nextBtnMob.addEventListener("click", ()=>slide("next"));
+nextBtnMob.onclick = (()=>slide ("next"));
 // Slide to Previous Item in Slider
-prevBtnMob.addEventListener("click", ()=>slide("previous"));
+prevBtnMob.onclick = (()=>slide("previous"));
 
 /** Desktop Slider Events  **/
 // Slide to Next Item in Slider
-nextBtnDes.addEventListener("click", ()=>slides("next"));
+nextBtnDes.onclick = (()=>slides ("next"));;
 // Slide to Previous Item in Slider
-prevBtnDes.addEventListener("click", ()=>slides("previous"));
+prevBtnDes.onclick = (()=>slides ("previous"));
     
 
 /*****
