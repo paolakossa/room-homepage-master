@@ -1,9 +1,9 @@
 const   menuIcon  = document.querySelector('.nav__hamburger');
 const   closeIcon  = document.querySelector(".nav__close");
-let     nextBtnMob = document.querySelector(".slider-mob__next-btn");
-let     prevBtnMob = document.querySelector(".slider-mob__prev-btn"); 
-let     nextBtnDes = document.querySelector(".slider-desk__next-btn");
-let     prevBtnDes = document.querySelector(".slider-desk__prev-btn");  
+const     nextBtnMob = document.querySelector(".slider-mob__next-btn");
+const     prevBtnMob = document.querySelector(".slider-mob__prev-btn"); 
+const     nextBtnDes = document.querySelector(".slider-desk__next-btn");
+const    prevBtnDes = document.querySelector(".slider-desk__prev-btn");  
 
 
 
@@ -21,17 +21,17 @@ closeIcon.addEventListener("click", () => {
     removeOverlay();
 });
 
-/** Mobile Slider Events  **/
+//** Mobile Slider Events  **/
 // Slide to Next Item in Slider
-nextBtnMob.onclick = (()=>slide ("next"));
+nextBtnMob.addEventListener("click", ()=>slide("next"));
 // Slide to Previous Item in Slider
-prevBtnMob.onclick = (()=>slide("previous"));
+prevBtnMob.addEventListener("click", ()=>slide("previous"));
 
 /** Desktop Slider Events  **/
 // Slide to Next Item in Slider
-nextBtnDes.onclick = (()=>slides ("next"));;
+nextBtnDes.addEventListener("click", ()=>slides("next"));
 // Slide to Previous Item in Slider
-prevBtnDes.onclick = (()=>slides ("previous"));
+prevBtnDes.addEventListener("click", ()=>slides("previous"));
     
 
 /*****
@@ -73,14 +73,6 @@ function slide(slideTo){
         if(sliderBar.scrollLeft > 0){
             sliderBar.scrollLeft -= slideWidth;
         }
-    }
-}
-function incQty(){
-    inpQty.value++;
-}
-function decQty(){
-    if(inpQty.value > 0){
-        inpQty.value--;
     }
 }
 

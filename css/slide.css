@@ -65,6 +65,10 @@
 
 @media only screen and  (min-width:1024px){
 
+   body{
+
+    max-width: 1340px;
+   }
     .slider-desk {
     position: relative;
     display: flex;
@@ -88,6 +92,8 @@
 /* .slider-mob__control{} */
 
 .slider-desk__control{
+    display: flex;
+    justify-content: end;
 
 
 }
@@ -132,5 +138,7 @@
 }
 
 
-
 }
+
+
+
